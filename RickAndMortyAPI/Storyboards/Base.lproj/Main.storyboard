@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="EvH-kO-L9w">
             <objects>
-                <tableViewController id="r2v-QU-vYD" sceneMemberID="viewController">
+                <tableViewController id="r2v-QU-vYD" customClass="CharactersTableViewController" customModule="RickAndMortyAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kgZ-qT-8EO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
