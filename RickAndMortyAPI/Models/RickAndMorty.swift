@@ -39,6 +39,7 @@ struct Character: Codable {
     Gender: \(gender)
     Status: \(status)
     Location: \(location.name)
+    Episode: \(episode.count)
     """
     }
 }

@@ -118,7 +118,7 @@
                                 <rect key="frame" x="50" y="91" width="220" height="220"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kaz-fF-Sdf">
-                                <rect key="frame" x="16" y="337" width="288" height="122"/>
+                                <rect key="frame" x="16" y="337" width="288" height="225"/>
                                 <string key="text">    Name: \(name)
     Status: \(status)
     Species: \(species)
@@ -129,20 +129,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOr-Ta-jKT">
-                                <rect key="frame" x="16" y="467" width="288" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9eZ-3Z-6ZI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9eZ-3Z-6ZI" firstAttribute="bottom" secondItem="OOr-Ta-jKT" secondAttribute="bottom" constant="20" id="Bz0-Yo-Zzj"/>
-                            <constraint firstItem="OOr-Ta-jKT" firstAttribute="height" secondItem="fNM-YQ-nfw" secondAttribute="height" multiplier="0.142606" id="Hz7-Uy-cdu"/>
-                            <constraint firstItem="OOr-Ta-jKT" firstAttribute="leading" secondItem="9eZ-3Z-6ZI" secondAttribute="leading" constant="16" id="Ik7-Dg-XbH"/>
-                            <constraint firstItem="OOr-Ta-jKT" firstAttribute="top" secondItem="Kaz-fF-Sdf" secondAttribute="bottom" constant="8" symbolic="YES" id="Ikb-ol-h0n"/>
                             <constraint firstItem="KCC-4t-7Y8" firstAttribute="leading" secondItem="9eZ-3Z-6ZI" secondAttribute="leading" constant="50" id="MYH-kZ-2cW"/>
                             <constraint firstItem="KCC-4t-7Y8" firstAttribute="top" secondItem="9eZ-3Z-6ZI" secondAttribute="top" id="NlH-MQ-emy"/>
                             <constraint firstItem="9eZ-3Z-6ZI" firstAttribute="trailing" secondItem="Kaz-fF-Sdf" secondAttribute="trailing" constant="16" id="PxJ-Cl-gIo"/>
@@ -150,14 +140,13 @@
                             <constraint firstItem="KCC-4t-7Y8" firstAttribute="height" secondItem="fNM-YQ-nfw" secondAttribute="height" multiplier="0.387324" id="b5F-lX-hS5"/>
                             <constraint firstItem="9eZ-3Z-6ZI" firstAttribute="trailing" secondItem="KCC-4t-7Y8" secondAttribute="trailing" constant="50" id="erC-IK-h6C"/>
                             <constraint firstItem="Kaz-fF-Sdf" firstAttribute="leading" secondItem="9eZ-3Z-6ZI" secondAttribute="leading" constant="16" id="kCu-FN-wK7"/>
-                            <constraint firstItem="9eZ-3Z-6ZI" firstAttribute="trailing" secondItem="OOr-Ta-jKT" secondAttribute="trailing" constant="16" id="lLc-tX-MUt"/>
+                            <constraint firstItem="9eZ-3Z-6ZI" firstAttribute="bottom" secondItem="Kaz-fF-Sdf" secondAttribute="bottom" constant="6" id="pR7-wS-Uql"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cyB-6V-J3Q"/>
                     <connections>
                         <outlet property="characterImage" destination="KCC-4t-7Y8" id="pTL-nN-8y7"/>
                         <outlet property="characterInfoLabel" destination="Kaz-fF-Sdf" id="vHE-ny-GXF"/>
-                        <outlet property="locationLabel" destination="OOr-Ta-jKT" id="Elr-86-OeB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzg-1C-fxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
