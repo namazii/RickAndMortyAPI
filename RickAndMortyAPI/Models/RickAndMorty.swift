@@ -51,24 +51,7 @@ struct Location: Codable {
 
 // MARK: - Episode
 struct Episode: Codable {
-    let name: String
-    let date: String
-    let episode: String
-    let characters: [String]
-    
-    var description: String {
-        """
-    Title: \(name)
-    Date: \(date)
-    """
-    }
-
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case date = "air_date"
-        case episode = "episode"
-        case characters = "characters"
-    }
+    let name: String 
 }
 
 enum Link: String {

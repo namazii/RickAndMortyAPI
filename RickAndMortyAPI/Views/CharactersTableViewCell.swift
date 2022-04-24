@@ -14,6 +14,12 @@ class CharactersTableViewCell: UITableViewCell {
     @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     
+//    private var imageUrl: URL? {
+//        didSet {
+//
+//        }
+//    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.characterImageView.layer.cornerRadius = self.characterImageView.frame.width / 2

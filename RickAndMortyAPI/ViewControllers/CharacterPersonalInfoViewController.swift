@@ -9,11 +9,13 @@ import UIKit
 
 class CharacterPersonalInfoViewController: UIViewController {
     
-    @IBOutlet weak var characterImage: UIImageView!
+    @IBOutlet weak var characterImage: UIImageView! {
+        didSet{
+            characterImage.layer.cornerRadius = characterImage.frame.width / 2
+        }
+    }
     
     @IBOutlet weak var characterInfoLabel: UILabel!
-    
-    @IBOutlet weak var locationLabel: UILabel!
     
     var character: Character?
     var episodes: [String] = []
@@ -29,8 +31,11 @@ class CharacterPersonalInfoViewController: UIViewController {
         }
         showSpinner(in: view)
         characterInfoLabel.text = character?.description
-        
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.characterImage.layer.cornerRadius = self.characterImage.frame.width / 2
+//    }
     
     private func showSpinner(in view: UIView) {
         spinnerView = UIActivityIndicatorView(style: .large)
@@ -38,7 +43,6 @@ class CharacterPersonalInfoViewController: UIViewController {
         spinnerView.startAnimating()
         spinnerView.center = characterInfoLabel.center
         spinnerView.hidesWhenStopped = true
-
         view.addSubview(spinnerView)
     }
     
