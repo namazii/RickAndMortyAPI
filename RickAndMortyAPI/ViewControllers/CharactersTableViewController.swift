@@ -32,6 +32,14 @@ class CharactersTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func updateData(_ sender: UIBarButtonItem) {
+        if sender.tag == 1 {
+            fetchData(from: rickAndMorty?.info.next)
+        } else {
+            fetchData(from: rickAndMorty?.info.prev)
+        }
+    }
+    
     private func fetchData(from url: String?) {
         NetworkManager.shared.fetchData(from: url) { rickAndMorty in
             self.rickAndMorty = rickAndMorty
@@ -47,5 +55,7 @@ class CharactersTableViewController: UITableViewController {
         detailVC.character = character
         
     }
+    
+    
     
 }
