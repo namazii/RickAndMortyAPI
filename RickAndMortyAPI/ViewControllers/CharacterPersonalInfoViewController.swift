@@ -13,7 +13,18 @@ class CharacterPersonalInfoViewController: UIViewController {
     
     @IBOutlet weak var characterInfoLabel: UILabel!
     
-    @IBOutlet weak var locatioharacterImage.image = UIImage(data: imageData)
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    var character: Character?
+//    var episod: [Episode] = []
+//    var episodeURL: [String] = []
+    
+    private var spinnerView = UIActivityIndicatorView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NetworkManager.shared.fetchImage(from: character?.image) { imageData in
+            self.characterImage.image = UIImage(data: imageData)
             self.spinnerView.stopAnimating()
         }
         showSpinner(in: view)
@@ -28,18 +39,7 @@ class CharacterPersonalInfoViewController: UIViewController {
         spinnerView = UIActivityIndicatorView(style: .large)
         spinnerView.color = .white
         spinnerView.startAnimating()
-        spinnerVnLabel: UILabel!
-        
-        var character: Character?
-    //    var episod: [Episode] = []
-    //    var episodeURL: [String] = []
-        
-        private var spinnerView = UIActivityIndicatorView()
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            NetworkManager.shared.fetchImage(from: character?.image) { imageData in
-                self.ciew.center = characterInfoLabel.center
+        spinnerView.center = characterInfoLabel.center
         spinnerView.hidesWhenStopped = true
 
         view.addSubview(spinnerView)
