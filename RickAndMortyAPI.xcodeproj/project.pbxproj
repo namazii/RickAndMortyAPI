@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC49387E2814141900F73CE8 /* CharactersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49387D2814141900F73CE8 /* CharactersTableViewCell.swift */; };
 		BC4938812814287E00F73CE8 /* CharacterPersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4938802814287E00F73CE8 /* CharacterPersonalInfoViewController.swift */; };
+		BC9934872816ED1B00183539 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9934862816ED1B00183539 /* ImageCache.swift */; };
 		BCB8AD002813EF16002117AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8ACFF2813EF16002117AB /* AppDelegate.swift */; };
 		BCB8AD022813EF16002117AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8AD012813EF16002117AB /* SceneDelegate.swift */; };
 		BCB8AD072813EF16002117AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB8AD052813EF16002117AB /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		BC49387D2814141900F73CE8 /* CharactersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewCell.swift; sourceTree = "<group>"; };
 		BC4938802814287E00F73CE8 /* CharacterPersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPersonalInfoViewController.swift; sourceTree = "<group>"; };
+		BC9934862816ED1B00183539 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		BCB8ACFC2813EF16002117AB /* RickAndMortyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB8ACFF2813EF16002117AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB8AD012813EF16002117AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				BCB8AD172813F69D002117AB /* NetworkManager.swift */,
+				BC9934862816ED1B00183539 /* ImageCache.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				BC49387E2814141900F73CE8 /* CharactersTableViewCell.swift in Sources */,
 				BCB8AD182813F69D002117AB /* NetworkManager.swift in Sources */,
+				BC9934872816ED1B00183539 /* ImageCache.swift in Sources */,
 				BC4938812814287E00F73CE8 /* CharacterPersonalInfoViewController.swift in Sources */,
 				BCB8AD1E2814085F002117AB /* CharactersTableViewController.swift in Sources */,
 				BCB8AD002813EF16002117AB /* AppDelegate.swift in Sources */,

@@ -73,4 +73,16 @@ class NetworkManager {
             }
         }
     }
+    
+    func fetchImageCache(from url: URL, completion: @escaping(Result<Data, NetworkError>) -> Void) {
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                completion(.failure(.noData))
+                return
+            }
+            DispatchQueue.main.async {
+                completion(.success(data))
+            }
+        }.resume()
+    }
 }
