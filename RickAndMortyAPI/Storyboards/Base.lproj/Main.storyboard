@@ -27,28 +27,28 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-lk-WGN">
                                             <rect key="frame" x="16" y="11" width="91" height="95"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ants in my Eyes Johnson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DV-SV-alW">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ants in my Eyes Johnson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7DV-SV-alW">
                                             <rect key="frame" x="118" y="11" width="294" height="41"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-yW-mpT">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-yW-mpT">
                                             <rect key="frame" x="118" y="86" width="294" height="20"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSV-aJ-eKb">
-                                            <rect key="frame" x="118" y="60" width="294" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="GSV-aJ-eKb">
+                                            <rect key="frame" x="118" y="56" width="294" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="GSV-aJ-eKb" secondAttribute="trailing" constant="16" id="7Vc-sv-m4X"/>
-                                        <constraint firstItem="GSV-aJ-eKb" firstAttribute="height" secondItem="y6b-mQ-Cze" secondAttribute="height" multiplier="0.153846" id="8Ej-kG-YzI"/>
+                                        <constraint firstItem="GSV-aJ-eKb" firstAttribute="height" secondItem="y6b-mQ-Cze" secondAttribute="height" multiplier="0.153846" constant="4.0000179999999972" id="8Ej-kG-YzI"/>
                                         <constraint firstItem="7DV-SV-alW" firstAttribute="top" secondItem="y6b-mQ-Cze" secondAttribute="top" constant="11" id="L1c-rx-KBu"/>
                                         <constraint firstItem="Fsj-yW-mpT" firstAttribute="top" secondItem="GSV-aJ-eKb" secondAttribute="bottom" constant="8" symbolic="YES" id="Mom-pj-NSl"/>
                                         <constraint firstItem="7DV-SV-alW" firstAttribute="height" secondItem="y6b-mQ-Cze" secondAttribute="height" multiplier="0.350427" id="N1z-co-mvw"/>
@@ -61,7 +61,7 @@
                                         <constraint firstAttribute="bottom" secondItem="W8b-lk-WGN" secondAttribute="bottom" constant="11" id="cmR-gG-9ay"/>
                                         <constraint firstItem="7DV-SV-alW" firstAttribute="leading" secondItem="W8b-lk-WGN" secondAttribute="trailing" constant="11" id="fjr-8F-2tz"/>
                                         <constraint firstItem="GSV-aJ-eKb" firstAttribute="leading" secondItem="W8b-lk-WGN" secondAttribute="trailing" constant="11" id="guS-Fr-P64"/>
-                                        <constraint firstItem="GSV-aJ-eKb" firstAttribute="top" secondItem="7DV-SV-alW" secondAttribute="bottom" constant="8" symbolic="YES" id="hAj-9I-YEA"/>
+                                        <constraint firstItem="GSV-aJ-eKb" firstAttribute="top" secondItem="7DV-SV-alW" secondAttribute="bottom" constant="4" id="hAj-9I-YEA"/>
                                         <constraint firstAttribute="bottom" secondItem="Fsj-yW-mpT" secondAttribute="bottom" constant="11" id="oA6-PD-7rF"/>
                                         <constraint firstItem="Fsj-yW-mpT" firstAttribute="leading" secondItem="W8b-lk-WGN" secondAttribute="trailing" constant="11" id="rBe-4V-Ck9"/>
                                     </constraints>
@@ -95,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tB2-v2-rLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="115.14084507042254"/>
+            <point key="canvasLocation" x="853.73831775700933" y="114.68682505399569"/>
         </scene>
         <!--Character Personal Info View Controller-->
         <scene sceneID="c7w-2W-qpx">
