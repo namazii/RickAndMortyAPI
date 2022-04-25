@@ -67,14 +67,17 @@ class CharactersTableViewCell: UITableViewCell {
             }
         }
     }
-    
+}
+
+extension CharactersTableViewCell {
+    // MARK: - ImageCache
     private func getImage(from url: URL, completion: @escaping(Result<UIImage, Error>) -> Void) {
-        // Get image from cahche
+
         if let cacheImage = ImageCache.shared.object(forKey: url.lastPathComponent as NSString) {
             completion(.success(cacheImage))
             return
         }
-        //Download image from url
+
         NetworkManager.shared.fetchImageCache(from: url) { result in
             switch result {
             case .success(let imageData):

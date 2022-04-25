@@ -15,8 +15,11 @@ class CharactersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 100
         fetchData(from: Link.rickAndMortyApi.rawValue)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        tableView.rowHeight = view.frame.height / 2
     }
     
     // MARK: - Table view data source
@@ -55,7 +58,4 @@ class CharactersTableViewController: UITableViewController {
         detailVC.character = character
         
     }
-    
-    
-    
 }

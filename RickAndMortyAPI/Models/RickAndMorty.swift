@@ -13,7 +13,6 @@ struct RickAndMorty: Codable {
 
 // MARK: - Info
 struct Info: Codable {
-    let pages: Int
     let next: String?
     let prev: String?
 }
