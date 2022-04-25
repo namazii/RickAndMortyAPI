@@ -10,8 +10,8 @@ import UIKit
 class CharactersTableViewController: UITableViewController {
     
     private var rickAndMorty: RickAndMorty?
-
     private var character: [Character] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class CharactersTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rickAndMorty?.results.count ?? 0
+        rickAndMorty?.results.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
